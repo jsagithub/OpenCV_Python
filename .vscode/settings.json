@@ -1,0 +1,6 @@
+{
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintPath": "/home/jsa/anaconda2/bin/pylint",
+  "python.pythonPath": "/home/jsa/anaconda2/bin/python"
+}

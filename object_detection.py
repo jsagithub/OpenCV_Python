@@ -2,8 +2,10 @@
 import cv2
 import numpy as np
 
+
 def nothing(x):
     pass
+
 
 cap = cv2.VideoCapture(0)
 
@@ -17,8 +19,8 @@ cv2.createTrackbar("UV", "Tracking", 255, 255, nothing)
 
 while True:
     #frame = cv2.imread('smarties.png')
-   
-   _, frame = cap.read()
+
+    _, frame = cap.read()
 
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
@@ -43,7 +45,7 @@ while True:
 
     key = cv2.waitKey(1)
     if key == 27:
-        break
+            break
 
 cap.release()
 cv2.destroyAllWindows()
